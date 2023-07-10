@@ -14,7 +14,7 @@
 Auth::routes();
 
 Route::get('/', function() {
-    return view('site.home.index');
+    return view('site.home.index'); 
 });
 
 Route::get('admin/home/index', [App\Http\Controllers\Admin\UserController::class, 'index'])->name('admin.home.index')-> middleware('auth');

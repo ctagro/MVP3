@@ -6,7 +6,7 @@
      <input type="hidden" name="user_id" value="{{auth()->user()->id}}" class="form-control py-3"> 
      <input type="hidden" name="origin" value="{{$account->origin}}" class="form-control py-3">
 
-            <div class="form-group row">
+            <div class="form-group row g-3">
 
                 @if(!Request::is('*/edit'))
                      
@@ -26,7 +26,7 @@
             @endif
             </div>
    
-            <div class="form-group row">
+            <div class="form-group row g-3">
                 <input type="txt" name="description" value="{{old('description') == $account->description ? $account->description : $account->description}}" class="form-control py-3" >
                 @if($errors->has('description'))
                     <h6 class="text-danger" >Digite a Descrição</h6> 
@@ -35,7 +35,7 @@
 
 
 
-<div class="form-group row">
+<div class="form-group row g-3">
     <select name="type_account_id"  id="type_account_id" class="form-control">
         <option value="" disabled selected>Selecione o tipo de conta...</option> 
             @foreach($type_accounts as $type_account)
@@ -50,7 +50,7 @@
         @endif
     </div>
 
-<div class="form-group row">
+<div class="form-group row g-3">
     <select name="accounting_id"  id="accounting_id" class="form-control">
             <option value="" disabled selected>Selecione a conta...</option> 
             @foreach($accountings as $accounting)
@@ -65,7 +65,7 @@
         @endif
 </div>
 
-<div class="form-group row">
+<div class="form-group row g-3">
     <select name="ground_id"  id="ground_id" class="form-control">
    <option value="" disabled selected>Selecione a área...</option> 
        @foreach($grounds as $ground)         
@@ -80,7 +80,7 @@
 
 
 
-<div class="form-group row">
+<div class="form-group row g-3">
   <input type="number" class="floatNumberField form-control py-3" name="amount" value="{{old('amount') ?? $account->amount }}"  placeholder="0.00" step="0.01" >
     @if($errors->has('amount'))
         <h6 class="text-danger" >Digite o valor</h6> 

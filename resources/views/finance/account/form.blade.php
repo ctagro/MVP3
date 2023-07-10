@@ -6,14 +6,14 @@
      <input type="hidden" name="user_id" value="{{auth()->user()->id}}" class="form-control py-3"> 
      <input type="hidden" name="origin" value={{"C"}} class="form-control py-3">
 
-            <div class="form-group row">
+            <div class="form-group row g-3 ">
                 <input type="date" name="date" id ="date"  value="{{old('date')}}" class="form-control py-3" placeholder="$date"> 
                 @if($errors->has('date'))
                         <h6 class="text-danger" >Digite a data</h6> 
                 @endif           
             </div>
    
-            <div class="form-group row">
+            <div class="form-group row g-3">
                 <input type="txt" name="description" value="{{old('description')}}" class="form-control py-3" placeholder="Descrição" >
                 @if($errors->has('description'))
                     <h6 class="text-danger" >Digite a Descrição</h6> 
@@ -61,7 +61,7 @@
 
 
 
-<div class="form-group row">
+<div class="form-group row g-3">
   <input type="number" class="floatNumberField form-control py-3"  name="amount"  value="{{old('amount')}}" placeholder="0.00" step="0.01" >
     @if($errors->has('amount'))
         <h6 class="text-danger" >Digite o valor</h6> 

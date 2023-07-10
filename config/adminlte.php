@@ -45,8 +45,8 @@ return [
     |
     */
 
-    'logo' => '<b>MVP3</b>',
-    'logo_img' => 'img/logo/logo_santa_luiza.jpg',
+    'logo' => '<b></b>',
+    'logo_img' => 'img/logo/MVP3logo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -244,23 +244,23 @@ return [
         ],
         [
             'text'       => 'Meu Perfil',
-            'icon_color' => 'yellow',
+            'icon_color' => 'white',
             'url'  => 'site/profile/profile',
             'icon' => 'fas fa-fw fa-user',
         ],
 
         [
             'text'       => 'Importar Ceasa',
-            'icon_color' => 'yellow',
+            'icon_color' => 'white',
             'url'  => 'import',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-file-import',
         ],
 
         [
             'text'       => 'Pesquisa Ceasa',
             'icon_color' => 'green',
             'url'  => '/ceasa_research',
-            'icon'        => 'fas fa-money-bill-wave',
+            'icon'        => 'fas  fa-magnifying-glass-dollar   ',
         ],
         
     /*    [
@@ -277,7 +277,7 @@ return [
 
             [
                 'text'    => 'Financeiro',
-                'icon'    => 'fas fa-fw fa-share',
+                'icon'    => 'fas fa-fw fa-coins',
                 'submenu' => [
 
 
@@ -285,7 +285,7 @@ return [
                     'text'       => 'Registrar despesas',
                     'icon_color' => 'cyan',
                     'url'        => '/account',
-                    'icon'        => 'fas fa-calendar-minus',
+                    'icon'        => 'fas fa-folder-plus',
 
                 ],
 
