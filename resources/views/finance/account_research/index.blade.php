@@ -119,7 +119,7 @@
 <!-- Fim da Tabela dos registros -->
 
  
-<p class="text-right"> <a href="{{ url('/account_research') }}" class="text-right">Voltar </a> </p>
+<p class="text-right"> <a href="{{ url('/account_research') }}" class="text-right fas fa-solid fa-arrow-left"> Voltar </a> </p>
 
 </body>
 

@@ -63,16 +63,16 @@
             <div class="col-md-12">
               <h3 class="contact-title text-white">Entre em contato conosco</h3>
             </div>
-            <div class="col-md-4 contact-box">
+            <div class="col-md-4 contact-box d-flex">
               <i class="fas fa-phone text-white"></i>
-              <p><span class="contact-tile text-white">Ligue para:</span> (11)95056-5771</p>
-              <p><span class="contact-tile text-white">Horários:</span> 8:00 - 17:00</p>
+              <p class="contact-tile text-white"> (11)95056-5771</p>
+             
             </div>
-            <div class="col-md-4 contact-box ">
+            <div class="col-md-4 contact-box d-flex ">
               <i class="fas fa-envelope text-white"></i>
-              <p><span class="contact-tile text-white">Envie um email:</span> jp.loures.vale@gmail.com</p>
+              <p class=' text-white'> jp.loures.vale@gmail.com</p>
             </div>
-            <div class="col-md-4 contact-box">
+            <div class="col-md-4 contact-box d-flex">
               <i class="fas fa-map-marker-alt text-white"></i>
               <p><span class="contact-tile text-white">Fazenda Santa Luiza - Antônio Carlos - MG</p>
             </div>
@@ -84,15 +84,13 @@
       <div class="container text-white">
         <div class="row">
             <div class="col-md-12 text-white">
-              <p>Desenvolvido por <a href="#" target="_blank">João Procópio C. Loures Vale</a> &copy; 2021</p>
+              <p>Desenvolvido por <a href="#" target="_blank">João Procópio C. Loures Vale</a class=" text-white"> &copy; 2021</p>
             </div>
         </div>
       </div>
     </div>
   </header>
   </footer>
-
-
 </body>
 
 

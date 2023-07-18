@@ -2,11 +2,11 @@
 
 @section('title', 'Prefil')
 @section('content_header')
-    <h1 class="m-0 text-dark">Atualizar Perfil</h1>
+  
 @stop
-
 @section('content')
-
+<div class='container card p-3'>
+<h1 class=" text-dark  ">Atualizar Perfil</h1>
     @if(session('sucess'))
         <div class="alert alert-success">
             {{ session('sucess') }}
@@ -20,7 +20,7 @@
     @endif
 
 
-    <form action= "{{ route('profile.update') }}" method = "POST" enctype="multipart/form-data">
+    <form class='' action= "{{ route('profile.update') }}" method = "POST" enctype="multipart/form-data">
         {!! csrf_field() !!}
     <div class="form-group">
         <label for="name">Nome</label>
@@ -39,10 +39,11 @@
         @if (auth()->user()->image != null)
              <img src="{{ asset('storage/users/'.auth()->user()->image)}}" class="img-thumbnail elevation-2"  style="max-width: 50px;"> 
         @endif
-        <label for="image">.....Sua foto.....</label>
+        <label for="image">Foto</label>
         <input type="file" class="form-control"  name='image' >
     </div>
 
-    <button type="submit" class="btn btn-primary">Atualizar Perfil</button>
+    <button type="submit" class="btn btn-success">Atualizar Perfil</button>
     </form>
+</div>
 @stop

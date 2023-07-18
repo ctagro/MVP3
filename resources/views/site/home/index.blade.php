@@ -4,8 +4,8 @@
 <main>
 <div id="carrosel-main"class="  ">
     <!-- slider -->
-    <div id="mainSlider" class="carousel slide " style='height: 40vh; ' data-ride="carousel">
-      <ol class="carousel-indicators ">
+    <div id="mainSlider" class="carousel slide " style='height: 60vh; ' data-ride="carousel">
+      <!-- <ol class="carousel-indicators ">
         <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
         <li data-target="#mainSlider" data-slide-to="1"></li>
         <li data-target="#mainSlider" data-slide-to="2"></li>
@@ -18,7 +18,7 @@
       <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-      </a>
+      </a> -->
     </div>
 </div>
 </main>

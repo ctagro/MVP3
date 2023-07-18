@@ -1,4 +1,4 @@
-<div class="card card-default">
+<div class="card container card-default">
     <div class="card-header">
         <h3 class="card-title">Dados da Pesquisa</h3>
 
@@ -29,16 +29,13 @@
             </div>
           </div>
       </div>
-
           <div class="col-md-6">
             <div class="form-group">
               <label for="description">Produto :</label>
               <input type="text" name="product" id ="product"  class="form-control py-3" > 
             </div>  
           </div>
-
     </div>
- 
   </div>            
 
 <!-- Fim do Formulario de ceasa_conta -->

@@ -9,7 +9,7 @@
              @include('finance.account.form')
 
                  <div class="form-group">
-                      <button type="submit" class="btn btn-success btn-block">Registrar a movimentação financeira</button>
+                      <button type="submit" class="btn btn-success">Registrar</button>
                  </div>
              </div>
          <a href="#" id="ancora"></a>

@@ -1,4 +1,4 @@
-<nav class="main-header navbar
+<nav class="main-header navbar m-b-3
     {{ config('adminlte.classes_topnav_nav', 'navbar-expand-md') }}
     {{ config('adminlte.classes_topnav', 'navbar-white navbar-light') }}">
 
@@ -18,7 +18,7 @@
         </button>
 
         {{-- Navbar collapsible menu --}}
-        <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+        <div class="collapse navbar-collapse order-3" id="navbarCollapse"> 
             {{-- Navbar left links --}}
             <ul class="nav navbar-nav">
                 {{-- Configured left links --}}

@@ -50,23 +50,23 @@
 
         @method('PATCH')
 
-             <div class="form-group">
+             <div class="container card p-3 form-group">
              {!! csrf_field() !!}                      
 
              @include('finance.account.form_edit')
 
                  <div class="form-group">
-                      <button type="submit" class="btn btn-danger btn-block">Atualizar a Movimentação</button>
+                      <button type="submit" class="btn btn-success btn-block">Atualizar a Movimentação</button>
                  </div>
              </div>
 
   <!-- Link para deletar inativo -->
     
-             <div class="row justify-content-between" >
+             <div class=" container justify-content-between" >
 
-              <a href= "{{ route('account.show' ,[ 'account' => $account->id ])}}" class="btn btn-outline-danger" >Deletar</a>
+              <a href= "{{ route('account.show' ,[ 'account' => $account->id ])}}" class="btn btn-danger" >Deletar</a>
    
-              <div class="text-right"> <a href="{{ url('/account') }}" class="text-right">Voltar </a> </div>
+              <div class="text-right"> <a href="{{ url('/account') }}" class="text-right fas fa-solid fa-arrow-left"> Voltar </a> </div>
              </div>
          <a href="#" id="ancora"></a>
 </form>

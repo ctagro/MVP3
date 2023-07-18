@@ -8,7 +8,7 @@
             <input type="hidden" name="data_pay" value="2021-01-01" class="form-control py-3">
             
 
-
+<div class='card p-3'>
             <div class="row">
                 <div class="form-group col-sm-6 ">
 
@@ -139,20 +139,23 @@
                     <input type="longtext" name="note" value="{{old('note') ?? $sale->note }}" rows="4" class="form-control">                            
                 </div>
 
-            @csrf
-                <div class="card">
-                    <div class="card-header">
-                        <button type="submit" class="btn btn-primary btn-sm">Salvar</button>
+            
+</div>
+            
+                @csrf
+                
+                    <div class="container">
+                        <button type="submit" class="btn btn-success">Salvar</button>
                     
                         @if(!Request::is('*/sale_research/index'))
-                            <a href="{{ url('/sale_research/index') }}" class="float-right" >Voltar </a>
+                            <a href="{{ url('/sale_research/index') }}" class="float-right fas fa-solid fa-arrow-left" >Voltar </a>
                         @else
-                            <a href="{{ url('/sale') }}" class="float-right" >Voltar </a>
+                            <a href="{{ url('/sale') }}" class="float-right fas fa-solid fa-arrow-left" >Voltar </a>
                         @endif
                         
                             
                     </div>
-                </div>
+               
 </div>
 
 

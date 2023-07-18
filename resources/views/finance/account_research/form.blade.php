@@ -1,4 +1,4 @@
-<div class="card card-default">
+<div class="card container card-default">
     <div class="card-header">
         <h3 class="card-title">Dados da Consulta</h3>
 

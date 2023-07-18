@@ -48,7 +48,7 @@
 
 <!-- Inicio da Tabela dos registros -->
 
-                <div class='table-responsive'>
+                <div class='container card p-2 table-responsive'>
 
                 <table id="example1" class="table table-sm table-bordered table-striped dataTable dtr-inline collapsed" role="grid" aria-describedby="example1_info">
                     <thead>
@@ -95,15 +95,15 @@
 
 <!-- Fim da Tabela dos registros -->
 
-             
+   <div class=" container justify-content-between">          
     <!-- Inicio do Formulario de account --> 
 
        @include('finance.account.create') 
            
 <!-- Fim do Formulario de account_conta --> 
 
-<p class="text-right"> <a href="{{ url('admin/home/index') }}" class="text-right">Voltar </a> </p>
-
+<p class="text-right"> <a href="{{ url('admin/home/index') }}" class="text-right fas fa-solid fa-arrow-left">Voltar </a> </p>
+</div>
 </body>
 
 <!-- ./wrapper -->

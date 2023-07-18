@@ -30,13 +30,13 @@
 
 @section('content')
 
-  <div class="container">
+  <div class="container"> 
       <div class="row justify-content-center">
           <div class="col-md-12">
               <div class="card">
                   <div class="card-header">
                       <img class="card-img-top img-responsive img-thumbnail" src="{{ asset('img/cards/ceasa_plant.png')}}"  style="height: 50px; width: 50px;"alt="Imagem" >
-                      Pesquisa de cotações do Ceasa
+                      Pesquisa de cotações do negocio
                   </div>
               </div>
           </div>
@@ -44,24 +44,22 @@
   </div>
 
 
-    <form method="POST" action="{{ route('ceasa_research.file')}}">
+    <form method="POST"  action="{{ route('ceasa_research.file')}}">
       
-        <div class="form-group">
+        <div class="  form-group">
                 {!! csrf_field() !!}                      
 
                   @include('import.ceasaBH.ceasa_research.form')
-
-                  <div class="form-group">
-                    <button type="submit" class="btn btn-danger btn-block">Executar pesquisa</button>
+            <div class="container d-flex">
+                  <div class="">
+                    <button type="submit" class="btn btn-danger ">Executar pesquisa</button>
                   </div>
+            
+                <div class="">
+                  <a href="{{ url('admin/home/index') }}" class="float-right fas fa-solid fa-arrow-left" > Voltar </a> 
+                </div>
+            
             </div>
-
-            <div class="card">
-              <div class="card-header">
-                <a href="{{ url('admin/home/index') }}" class="float-right" >Voltar </a> 
-              </div>
-            </div>
-
         </div>
     <a href="#" id="ancora"></a>
     </form>

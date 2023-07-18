@@ -76,10 +76,10 @@
 
             </div>
  
-            <div class="card">
-                    <div class="card-header">
+            <div class="">
+                    <div class="">
                         <button type="submit" class="btn btn-primary btn-sm">Importar</button>
-                        <a href="{{ url('/home') }}" class="float-right" >Voltar </a> 
+                        <a href="{{ url('/home') }}" class="float-right fas fa-solid fa-arrow-left"  > Voltar </a> 
                     </div>
             </div>
     </form>

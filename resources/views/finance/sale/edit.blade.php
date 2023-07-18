@@ -38,7 +38,7 @@
                     <div class="card-header">
                         <img class="card-img-top img-responsive img-thumbnail" src="{{ asset('img/cards/sale_plant.png')}}"  style="height: 50px; width: 50px;"alt="Imagem" >
                         Venda
-                        <a class="float-right" href="{{url('/sale')}}">Lista</a>
+                        <a class="float-right btn btn-primary" href="{{url('/sale')}}">Lista</a>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
 
 @if(Session::has('mensagem_sucesso'))
 
-            <div class="alert alert-success"> {{ Session::get('mensagem_sucesso')}}</div>
+            <div class="alert alert-success container"> {{ Session::get('mensagem_sucesso')}}</div>
 
 @endif
 
@@ -85,7 +85,7 @@
                  {!! csrf_field() !!}                      
           
                      <div class="form-group">
-                          <button type="submit" class="btn btn-outline-danger" >Deletar...</button>
+                          <button type="submit" class="btn btn-danger my-3" >Deletar</button>
                      </div>
                  </div>
              </form>

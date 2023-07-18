@@ -1,8 +1,8 @@
-<nav class="main-header navbar
+<nav class="main-header navbar m-b-3
     {{ config('adminlte.classes_topnav_nav', 'navbar-expand') }}
     {{ config('adminlte.classes_topnav', 'navbar-white navbar-light') }}">
 
-    {{-- Navbar left links --}}
+    {{-- Navbar left links --}} 
     <ul class="navbar-nav">
         {{-- Left sidebar toggler link --}}
         @include('adminlte::partials.navbar.menu-item-left-sidebar-toggler')

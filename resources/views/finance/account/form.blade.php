@@ -2,7 +2,7 @@
  
      <!-- Inicio do Formulario de account_conta --> 
 
-  
+  <div class='container card p-3'>
      <input type="hidden" name="user_id" value="{{auth()->user()->id}}" class="form-control py-3"> 
      <input type="hidden" name="origin" value={{"C"}} class="form-control py-3">
 
@@ -69,7 +69,7 @@
 </div> 
 
 <input type="hidden" name="note" value="{{old('note)') ? $account->note : "Observação"  }}" class="form-control py-3">
-
+</div>
 <!-- Fim do Formulario de account_conta -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

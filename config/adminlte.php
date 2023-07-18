@@ -30,7 +30,7 @@ return [
     |
     */
 
-    'use_ico_only' => false,
+    'use_ico_only' => true,
     'use_full_favicon' => false,
 
     /*
@@ -46,11 +46,11 @@ return [
     */
 
     'logo' => '<b></b>',
-    'logo_img' => 'img/logo/MVP3logo.png',
-    'logo_img_class' => 'brand-image img-circle elevation-3',
+    'logo_img' => 'img/logo/MVP3logowhite.png',
+    'logo_img_class' => 'brand-image  elevation-3',
     'logo_img_xl' => null,
-    'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'AdminLTE',
+    'logo_img_xl_class' => 'brand-image-xs', 
+    'logo_img_alt' => 'MVP3 logo',
 
     /*
     |--------------------------------------------------------------------------
@@ -126,7 +126,7 @@ return [
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => '',
-    'classes_sidebar' => 'sidebar-dark-primary elevation-4',
+    'classes_sidebar' => 'sidebar-dark-primary d-flex flex-column  elevation-4',
     'classes_sidebar_nav' => '',
     'classes_topnav' => 'navbar-white navbar-light',
     'classes_topnav_nav' => 'navbar-expand',
@@ -146,7 +146,7 @@ return [
 
     'sidebar_mini' => true,
     'sidebar_collapse' => false,
-    'sidebar_collapse_auto_size' => false,
+    'sidebar_collapse_auto_size' => true,
     'sidebar_collapse_remember' => false,
     'sidebar_collapse_remember_no_transition' => true,
     'sidebar_scrollbar_theme' => 'os-theme-light',
@@ -237,6 +237,7 @@ return [
         ],
         [
             'text'        => 'Home',
+            'icon_color' => 'white',
             'url'         => 'admin/home/index',
             'icon'        => 'fas fa-house-user',
          //   'label'       => 4,
@@ -257,10 +258,10 @@ return [
         ],
 
         [
-            'text'       => 'Pesquisa Ceasa',
-            'icon_color' => 'green',
+            'text'       => 'Pesquisa negocio',
+            'icon_color' => 'white',
             'url'  => '/ceasa_research',
-            'icon'        => 'fas  fa-magnifying-glass-dollar   ',
+            'icon'   => 'fas fa-solid fa-building',
         ],
         
     /*    [
@@ -271,7 +272,7 @@ return [
          //   'label_color' => 'success',
         ],
       */  
-        ['header' => '=========================='],
+        ['header' => ''],
 
 
 
@@ -293,7 +294,7 @@ return [
                     'text'       => 'Registrar vendas',
                     'icon_color' => 'cyan',
                     'url'        => '/sale',
-                    'icon'        => 'fas fa-calendar-minus',
+                    'icon'        => 'fas fa-solid fa-cash-register',
 
                 ],
 
@@ -301,15 +302,15 @@ return [
                     'text'       => 'Registrar fluxo de caixa',
                     'icon_color' => 'cyan',
                     'url'        => '/cashFlow',
-                    'icon'        => 'fas fa-calendar-minus',
+                    'icon'        => 'fas fa-solid fa-money-bill',
 
                 ],
 
                 [
                     'text'       => 'Pesquisar Movimentações',
-                    'icon_color' => 'green',
+                    'icon_color' => 'cyan',
                     'url'  => '/account_research',
-                    'icon'        => 'fas fa-money-bill-wave',
+                    'icon'     => 'fas fa-solid fa-shoe-prints',
                 ],
 
                 [
@@ -325,17 +326,17 @@ return [
         ],
 
 
-        ['header' => '=========================='],
+        ['header' => ''],
 
         [
+            'icon'        => 'fas fa-solid fa-dolly', 
             'text'    => 'Atividades',
-            'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
 
 
             [
                 'text'       => 'Registrar Atividades',
-                'icon_color' => 'cyan',
+                'icon_color' => 'green',
                 'url'        => '/activity',
                 'icon'        => 'fas fa-calendar-plus', 
 
@@ -345,18 +346,18 @@ return [
                 'text'       => 'Pesquisar Atividades',
                 'icon_color' => 'green',
                 'url'  => '/activity_research',
-                'icon'        => 'fas fa-money-bill-wave',
+                'icon'       => 'fas fa-solid fa-eye',
             ],  
             
             
         ],
     ], 
     
-    ['header' => '=========================='],
+    ['header' => ''],
 
             [
                 'text'    => 'Insumos',
-                'icon'    => 'fas fa-fw fa-share',
+                'icon'    => 'fas fa-solid fa-keyboard',
                 'submenu' => [
             
             [
@@ -392,13 +393,13 @@ return [
 
     ],
 
-    ['header' => '=========================='],
+    ['header' => ''],
 
         
     
     [
         'text'    => 'Estoque de Fertilizantes',
-        'icon'    => 'fas fa-fw fa-share',
+        'icon'    => 'fas fa-fw fa-warehouse',
         'submenu' => [
 
 
@@ -426,11 +427,11 @@ return [
         ],
     ],
 
-    ['header' => '=========================='],      
+    ['header' => ''],      
     
     [
         'text'    => 'Estoque de Defensivos',
-        'icon'    => 'fas fa-fw fa-share',
+        'icon'    => 'fas fa-fw fa-boxes',
         'submenu' => [
 
 
@@ -458,11 +459,11 @@ return [
         ],
     ],
 
-    ['header' => '=========================='],
+    ['header' => ''],
 
         [
         'text'    => 'Relatórios',
-        'icon'    => 'fas fa-fw fa-share',
+        'icon'    => 'fas fa-fw fa-list',
         'submenu' => [
 
             [ 'text'       => 'Situação das estufas',
@@ -495,12 +496,12 @@ return [
         ],
     ],
 
-    ['header' => '=========================='],
+    ['header' => ''],
 
        [
         
         'text'    => 'configurações',
-        'icon'    => 'fas fa-fw fa-share',
+        'icon'    => 'fas fa-solid fa-gear',
         'submenu' => [
             [
                 'text'       => 'Tipo de atividades',
